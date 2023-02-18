@@ -1,13 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  min-height: 100vh;
 }
+
+.header {
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  background-color: rgb(64, 64, 245);
+}
+.header p {
+  font-size: 24px;
+}
+.header .links {
+  display: flex;
+  gap: 20px;
+}
+.header .links a {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.mainContent {
+  height: 92vh;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: black;
+}
+.mainContent section {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+.mainContent .animesPopulares {
+  background-color: rgb(220, 52, 52);
+}
+
+/*# sourceMappingURL=index.css.map */
